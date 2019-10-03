@@ -70,15 +70,17 @@ We are going to use a sample schema given to use by MySQL.
 
 1. What is the relationship between the "actor" and "film_actor" tables?
 
-Both share one key -- the 'actor_id' column.
+Both share one key -- 'actor_id'
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
-The blue diamond indicates that the data that column stores is not a number.
+The blue diamond indicates that the data that column stores is not null.
 
 3. How many foreign keys does the "payments" table have? How can you tell?
 
-I believe it's one -- the 'payment_id' column.
+Three -- customer_id, staff_id, and rental_id
+
+The "Foreign Keys" tab says so ;) (and that's what the red symbols mean)
 
 ##### ER Diagram upload
 
