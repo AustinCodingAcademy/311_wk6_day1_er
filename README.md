@@ -46,6 +46,7 @@ We are going to use a sample schema given to use by MySQL.
 
 9. Did you see any data? If not that's ok. The schema is more important here
 
+
 10. You should see many tables under this database
 
 ##### Create ER Diagram
@@ -69,13 +70,33 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
+actor_id one to one 
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+TIME STAMP? not null
 
 3. How many foreign keys does the "payments" table have? How can you tell?
+3 forieng keys because there are 3 red diamonds associated with the payments table.
 
 ##### ER Diagram upload
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
 
 2. Copy the screenshot to this directory and upload it (git push) along with this README
+
+
+The challenge is to organize the rectangles so that as few lines are crossing each other and it looks clean
+What is the relationship between the "actor" and "film_actor" tables?
+One to one-or-many
+An actor can be involved in one or more films
+This table represents the relationship of a film to a specific actor, not the film itself
+A film can have many actors but there is only one relationship between an actor and a film
+2 parallel lines means one 
+The “fork” means many
+What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+NOT NULL - there must be a value 
+This column is important and must have a value
+How many foreign keys does the "payments" table have? How can you tell?
+3, a red diamond indicates this. 
+A filled red diamond means there has to be a value
+A empty diamond means it doesn’t have to have a value
