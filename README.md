@@ -84,19 +84,3 @@ TIME STAMP? not null
 
 2. Copy the screenshot to this directory and upload it (git push) along with this README
 
-
-The challenge is to organize the rectangles so that as few lines are crossing each other and it looks clean
-What is the relationship between the "actor" and "film_actor" tables?
-One to one-or-many
-An actor can be involved in one or more films
-This table represents the relationship of a film to a specific actor, not the film itself
-A film can have many actors but there is only one relationship between an actor and a film
-2 parallel lines means one 
-The “fork” means many
-What does the blue diamond next to the "last_update" column on the "inventory" table represent?
-NOT NULL - there must be a value 
-This column is important and must have a value
-How many foreign keys does the "payments" table have? How can you tell?
-3, a red diamond indicates this. 
-A filled red diamond means there has to be a value
-A empty diamond means it doesn’t have to have a value
