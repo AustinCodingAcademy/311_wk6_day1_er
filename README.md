@@ -69,13 +69,21 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
+  
+  one-to-many
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
+  blue represents a simple attribute, and filled means NOT NULL. In English, there must be a value in this field when the inventory was last updated.
+
 3. How many foreign keys does the "payments" table have? How can you tell?
+
+  Zero. The key is yellow which means only primary key, and there are no other keys (which would be red)
 
 ##### ER Diagram upload
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
+
+  check it out!
 
 2. Copy the screenshot to this directory and upload it (git push) along with this README
