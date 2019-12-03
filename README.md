@@ -69,11 +69,12 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
+Each "one and only actor" (individual) can be "one or many" (multiple) films. A single actor can act in multiple films.
 
-2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+2. What does the blue diamond next to the "last_update" column on the "inventory" table represent? It is an attribute that does not have a key associated, and cannot be null.
 
 3. How many foreign keys does the "payments" table have? How can you tell?
-
+Three foreign keys: staff_id, customer_id and payment_rental. These attributes are all red diamonds, which indicate foreign keys. Filled red diamonds mean that they cannot be null, unfilled mean that they can be null.
 ##### ER Diagram upload
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
