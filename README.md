@@ -70,10 +70,15 @@ We are going to use a sample schema given to use by MySQL.
 
 1. What is the relationship between the "actor" and "film_actor" tables?
 
+    One and only one (actor) to one to many (film_actor)...In otherwords a single actor can be associated with multiple film_actors however each film_actor is only ever one actor.
+
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
-3. How many foreign keys does the "payments" table have? How can you tell?
+It represents a not null simple attribute
 
+3. How many foreign keys does the "payments" table have? How can you tell?
+ 
+ Three Foreign keys total:  Two foreign keys that can not be null and one foreign key that can be null.  You can tell from the two solid red diamonds and the one outlined diamond.
 ##### ER Diagram upload
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
