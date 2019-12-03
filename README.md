@@ -70,12 +70,21 @@ We are going to use a sample schema given to use by MySQL.
 
 1. What is the relationship between the "actor" and "film_actor" tables?
 
+An actor could have multiple films. However, the films are tied to one actor
+
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
+it means that it's a NOT NULL simple attribute. This enforces a field to always contain a value, which means that you cannot insert a new record, or update a record without adding a value to this field.
+
 3. How many foreign keys does the "payments" table have? How can you tell?
+
+3 foreign keys. You can tell by the icons next to the rows. There are two red colored filled diamond which mean they are NOT NULL Foreign Keys. There is a red colored not filled diamond so it's a Foreign Key which can be NULL.
+
 
 ##### ER Diagram upload
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
 
 2. Copy the screenshot to this directory and upload it (git push) along with this README
+
+Done.
