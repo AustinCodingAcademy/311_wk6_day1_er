@@ -69,10 +69,15 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
+That they both have the actor_id key.
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+A blue diamond indicates the column has NN set. Not Null
 
-3. How many foreign keys does the "payments" table have? How can you tell?
+
+3. How many foreign keys does the "payment" table have? How can you tell?
+
+Three and they are indicated with a red diamond.
 
 ##### ER Diagram upload
 
