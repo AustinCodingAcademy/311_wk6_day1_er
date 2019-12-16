@@ -32,7 +32,7 @@ We are going to use a sample schema given to use by MySQL.
   * Likely `cd ~/Downloads/sakila-db`
 
 3. Run the connect command followed by `< sakila-schema.sql` to load that database
-  * `mysql -u root -h <HOST IP FROM WORKBENCH> -p < sakila-schema.sql`
+  * `mysql -u root -h 34.69.76.219 -p  sakila-schema.sql`
 
 4. After the operation is complete (may take a couple mins) you should have automatically been exited from the `mysql` command
 
