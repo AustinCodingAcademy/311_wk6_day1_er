@@ -70,9 +70,30 @@ We are going to use a sample schema given to use by MySQL.
 
 1. What is the relationship between the "actor" and "film_actor" tables?
 
+* The relationship between actor table and film_actor table is one-to-many. 
+
+
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
+To the left of the column name is an icon that indicates whether the column is a member of the primary key. 
+If the icon is a small key, that column belongs to the primary key, otherwise the icon is a 'blue diamond' or a 'white diamond. 
+
+* A blue diamond indicates the column has NN set(NOT NULL simple attribute). 
+
 3. How many foreign keys does the "payments" table have? How can you tell?
+
+To fully understand physical database models, it is important to understand the concepts behind primary key-foreign key relationships.
+
+A primary key-foreign key relationship defines a one-to-many relationship between two tables in a relational database. A foreign key is a column or a set of columns in one table that references the primary key columns in another table. The primary key is defined as a column (or set of columns) where each value is unique and identifies a single row of the table.
+
+* The payments table has 3 foreign keys: 
+
+1. fk_payment_customer
+2. fk_payment_rental
+3. fk_payment_staff
+
+* Red diamonds means foreign key
+* We can find the answer clicking on the arrow next to 'indexes' in the payment table or in the opening tables on the left side -> double click on payment and click on the 'Foreign Keys' tab.
 
 ##### ER Diagram upload
 
