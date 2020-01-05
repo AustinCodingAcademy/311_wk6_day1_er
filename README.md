@@ -69,10 +69,13 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
+There is one and only one "actor" table which then goes to one or many "payment", then connects to "customer", then "language", and then finally one or many "film_actor". 
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+It is a blue filled diamond which is a Not Null simple attribute which means it must always have a value to be accepted.
 
 3. How many foreign keys does the "payments" table have? How can you tell?
+It has three foreign keys noted by two red colored filled diamonds and one red not filled. The not filled can be NULL. They are also highlighted in green when hovering over the "payments" entity title showing where they are also located in other tables, making them foreign.
 
 ##### ER Diagram upload
 
