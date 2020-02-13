@@ -69,10 +69,11 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
-
+      - The actor id is the primary key that ties both tables together. 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
-
+      - A NOT NULL simple attribute
 3. How many foreign keys does the "payments" table have? How can you tell?
+      - There are three, anything red would be either a regular foreign key that's also a primary key, a foreign key that's not null or a foreign key that can be null.
 
 ##### ER Diagram upload
 
