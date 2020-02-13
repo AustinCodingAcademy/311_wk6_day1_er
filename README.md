@@ -70,7 +70,7 @@ We are going to use a sample schema given to use by MySQL.
 
 1. What is the relationship between the "actor" and "film_actor" tables?
 
-Many relate to instances in one entity.
+One to many relationship.
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
@@ -79,6 +79,8 @@ It's a NOT NULL simple attribute
 3. How many foreign keys does the "payments" table have? How can you tell?
 3.
 Because Red colored: (Part of) Foreign key.
+Red colored filled diamond so it's a NOT NULL Foreign Key.
+Red colored not filled diamond so it's a Foreign Key which can be NULL
 
 ##### ER Diagram upload
 
