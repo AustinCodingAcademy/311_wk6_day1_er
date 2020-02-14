@@ -32,7 +32,7 @@ We are going to use a sample schema given to use by MySQL.
   * Likely `cd ~/Downloads/sakila-db`
 
 3. Run the connect command followed by `< sakila-schema.sql` to load that database
-  * `mysql -u root -h <HOST IP FROM WORKBENCH> -p < sakila-schema.sql`
+  * `mysql -u root -h 35.222.66.51 -p < sakila-schema.sql`
 
 4. After the operation is complete (may take a couple mins) you should have automatically been exited from the `mysql` command
 
@@ -69,13 +69,18 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
+One (and only one) to many 
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+It is a blue lined filled diamond so it's a NOT NULL simple attribute
 
 3. How many foreign keys does the "payments" table have? How can you tell?
+It has three foreign keys, You can tell because is has three relationship lines that point to primary keys on those tables 
 
 ##### ER Diagram upload
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
 
+
 2. Copy the screenshot to this directory and upload it (git push) along with this README
+
