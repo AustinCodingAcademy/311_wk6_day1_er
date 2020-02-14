@@ -74,7 +74,7 @@ We are going to use a sample schema given to use by MySQL.
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent? - It's a NOT NULL simple attribute.
 
 
-3. How many foreign keys does the "payments" table have? How can you tell? -18, all the red colored icons
+3. How many foreign keys does the "payments" table have? How can you tell? -3, all the red colored icons
 
 ##### ER Diagram upload
 
