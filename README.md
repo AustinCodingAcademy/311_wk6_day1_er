@@ -78,7 +78,7 @@ We are going to use a sample schema given to use by MySQL.
 
 3. How many foreign keys does the "payments" table have? How can you tell?
 
--Red diamonds display foreign keys. Filled means also 'NOT NULL' and unfilled means it can be 'NULL'
+-3 foreign keys. Red diamonds display foreign keys. Filled means also 'NOT NULL' and unfilled means it can be 'NULL'
 
 ##### ER Diagram upload
 
