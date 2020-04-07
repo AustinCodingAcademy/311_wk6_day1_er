@@ -70,12 +70,22 @@ We are going to use a sample schema given to use by MySQL.
 
 1. What is the relationship between the "actor" and "film_actor" tables?
 
+<!-- actor entity contains a primary key for all actors, the film actor entity only contains two foreign keys of film and actor, this makes for easier reference of all the actors of a film -->
+
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
+<!-- the blue diamonds represent foeld vslues of a table that are not better represented as primary or foreign keys   -->
+
 3. How many foreign keys does the "payments" table have? How can you tell?
+
+<!-- two, the red diamonds signify foreign keys -->
 
 ##### ER Diagram upload
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
 
+<!-- done, JE -->
+
 2. Copy the screenshot to this directory and upload it (git push) along with this README
+
+<!-- done, JE -->
