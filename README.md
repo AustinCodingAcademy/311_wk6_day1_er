@@ -85,3 +85,5 @@ Three. Anything red (keys or diamonds) are (part of) a foreign key
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
 
 2. Copy the screenshot to this directory and upload it (git push) along with this README
+
+![wk6_er_diagram](https://user-images.githubusercontent.com/52178686/86253999-dd371400-bb7a-11ea-94c4-e1a763e6d6b4.png)
