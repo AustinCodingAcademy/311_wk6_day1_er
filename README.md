@@ -69,7 +69,7 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
-What is the relationship between the "actor" and "film_actor" tables? actor_id is the primary key for the actor table and the foreign key to the film_actor table
+  one (actor) to many (film_actor)
 
 2. How many foreign keys does the "payments" table have? How can you tell? 3 (customer_id, staff_id, rental_id)
 
