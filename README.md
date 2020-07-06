@@ -69,10 +69,13 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
+   - one to many
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+   - The column is not a primary or foreign key and has a default constraint (attribute) of not null. The not null constraint is a column constraint that ensures values stored in a column are not null. Blue diamonds indicate column attributes.
 
 3. How many foreign keys does the "payments" table have? How can you tell?
+   - Three. Red diamonds indicate a foreign key. When filled, the diamond indicates that the foreign key column has a not null restraint (customer_id, staff_id). However, when the red diamond is unfilled, it indicates the foreign key can be null by default (rental_id).
 
 ##### ER Diagram upload
 
