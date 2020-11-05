@@ -70,9 +70,20 @@ We are going to use a sample schema given to use by MySQL.
 
 1. What is the relationship between the "actor" and "film_actor" tables?
 
+-Many mandatory to one mandatory
+
+
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
+-A blue lined filled diamond is a NOT NULL simple attribute
+
+
 3. How many foreign keys does the "payments" table have? How can you tell?
+
+-3 (customer_id, staff_id, rental_id)
+-The red colored diamonds indicate foreign IDs, also the 3 branched 
+-relationships to other entitys
+
 
 ##### ER Diagram upload
 
