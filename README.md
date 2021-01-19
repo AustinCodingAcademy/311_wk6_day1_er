@@ -8,15 +8,15 @@ You should already have MySQL installed from last week but if you don't, please 
 
 ##### Disable Binary Logging (Google Cloud)
 
-We need to alter a setting in our cloud database in order to import the dataset that we need. This setting has to do with "triggers" which we have not learned about directly but that you will look for more practice with later. 
+We need to alter a setting in our cloud database in order to import the dataset that we need. This setting has to do with "triggers" which we have not learned about directly but that you will look for more practice with later.
 
-1. Navigate to cloud.google.com and make sure you are logged in. 
+1. Navigate to cloud.google.com and make sure you are logged in.
 
 2. Navigate to your SQL instance (Cloud SQL)
 
 3. Under the "configuration" tab on the right side of your screen, select "edit configuration"
 
-4. Under "Enable auto backups" DESELECT "Enable Point-in-Time Recovery"/"*enable binary logging*"
+4. Under "Enable auto backups" DESELECT "Enable Point-in-Time Recovery"/"_enable binary logging_"
 
 5. Save and restart the instance
 
@@ -25,14 +25,17 @@ We need to alter a setting in our cloud database in order to import the dataset 
 We are going to use a sample schema given to use by MySQL.
 
 1. Download the zip directory and extract it
-  * https://dev.mysql.com/doc/sakila/en/sakila-installation.html
-  * The DB is called "sakila" under the Example Databases section
+
+- https://dev.mysql.com/doc/sakila/en/sakila-installation.html
+- The DB is called "sakila" under the Example Databases section
 
 2. cd into that directory
-  * Likely `cd ~/Downloads/sakila-db`
+
+- Likely `cd ~/Downloads/sakila-db`
 
 3. Run the connect command followed by `< sakila-schema.sql` to load that database
-  * `mysql -u root -h <HOST IP FROM WORKBENCH> -p < sakila-schema.sql`
+
+- `mysql -u root -h <HOST IP FROM WORKBENCH> -p < sakila-schema.sql`
 
 4. After the operation is complete (may take a couple mins) you should have automatically been exited from the `mysql` command
 
@@ -66,13 +69,19 @@ We are going to use a sample schema given to use by MySQL.
 
 8. Answer the following questions about this diagram
 
-##### ER Diagram Diagnosis 
+##### ER Diagram Diagnosis
 
 1. What is the relationship between the "actor" and "film_actor" tables?
 
+The relationship from "actor" to "film_actor" is one to many. An actor can be on one or more films. The relationship from "film_actor" to "actor" is one and only one. A film can have only one actor. The "film_actor" table seems to be a bridge table between the "actor" and "film" tables.
+
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
+This means the attribute "inventory is a simple attribute and is a part of no key. However the diamond is also filled in which means the value cannot be NULL.
+
 3. How many foreign keys does the "payments" table have? How can you tell?
+
+The payments table has three foreign keys. I can tell because three of the table attributes have red symbols next to them, indicating they are foreign keys. There are also three cardinal relationship lines to other tables.
 
 ##### ER Diagram upload
 
