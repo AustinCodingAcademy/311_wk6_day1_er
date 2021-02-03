@@ -16,7 +16,7 @@ We need to alter a setting in our cloud database in order to import the dataset 
 
 3. Under the "configuration" tab on the right side of your screen, select "edit configuration"
 
-4. Under "Enable auto backups" DESELECT "Enable Point-in-Time Recovery"/"*enable binary logging*"
+4. Under "Backups, recovery, and high availability" DESELECT "Enable Point-in-time recovery"/"*enable binary logging*"
 
 5. Save and restart the instance
 
@@ -72,7 +72,7 @@ We are going to use a sample schema given to use by MySQL.
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
-3. How many foreign keys does the "payments" table have? How can you tell?
+3. How many foreign keys does the "payment" table have? How can you tell?
 
 ##### ER Diagram upload
 
