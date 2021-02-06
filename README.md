@@ -11,7 +11,7 @@ You should already have MySQL installed from last week but if you don't, please 
 We need to alter a setting in our cloud database in order to import the dataset that we need. This setting has to do with "triggers" which we have not learned about directly but that you will look for more practice with later. 
 
 1. Navigate to cloud.google.com and make sure you are logged in
-
+    
 2. Navigate to your SQL instance (Cloud SQL)
 
 3. Under the "configuration" tab on the right side of your screen, select "edit configuration"
@@ -69,11 +69,11 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
-
+    `one and only one` to `one or many`
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
-
+    can be null
 3. How many foreign keys does the "payments" table have? How can you tell?
-
+    3;red=foreign key
 ##### ER Diagram upload
 
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
