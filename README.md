@@ -82,3 +82,5 @@ We are going to use a sample schema given to use by MySQL.
 1. Take a screenshot of the ER diagram you created and name it "wk6_er_diagram"
 
 2. Copy the screenshot to this directory and upload it (git push) along with this README
+![wk6_er_diagram](https://user-images.githubusercontent.com/54250471/121836169-99a8bd80-cc98-11eb-8787-28be8762452e.png)
+
