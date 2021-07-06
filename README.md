@@ -70,9 +70,15 @@ We are going to use a sample schema given to use by MySQL.
 
 1. What is the relationship between the "actor" and "film_actor" tables?
 
+One to many
+
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
 
-3. How many foreign keys does the "payments" table have? How can you tell?
+It is labeled as "NN" which stands for not null. It is a check to see if there are any null values on the last update. 
+
+3. How many foreign keys does the "payment" table have? How can you tell? 
+
+There are 3 foreign keys in the payment table: staff_id, customer_id, payment_rental. The short answer is that I looked it up in MySQL workbench but foreign keys are marked in red normally.
 
 ##### ER Diagram upload
 
